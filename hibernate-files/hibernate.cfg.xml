@@ -9,4 +9,4 @@
 		<property name="hibernate.connection.username"></property>
 		<property name="hibernate.connection.password"></property>			
 	</session-factory>
-</hibernate-configuration
+</hibernate-configuration>
