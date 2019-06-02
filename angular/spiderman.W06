@@ -1,0 +1,9 @@
+node -v
+npm -v
+npm install -g http-server
+http-server
+npm install -g typescript
+tsc -v
+npm install -g @angular/cli
+ng -v
+

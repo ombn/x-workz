@@ -1,0 +1,6 @@
+{
+"exception":[
+{"name":"Runtime","message":"Null pointer","created":false},
+{"name":"Exception","message":"file Not found","created":false},
+{"name":"HibernateExceptin","message":"Duplicate ","created":true}
+]}
