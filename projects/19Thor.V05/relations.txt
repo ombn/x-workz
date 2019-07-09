@@ -1,0 +1,75 @@
+
+Problem of Relations 
+
+
+Relations -- > Is A/  Inheritance / Extension
+		Has- A/Assoc/Composi
+		
+Classes -- Classes -- 
+		> Relationships
+
+Is- a 
+Two Class-->> Similar Data type
+Dog--> Animal,
+Xworkz--> Institute
+Car--> Vehicle, 
+Bangalore--> City, 
+Apple-->Fruit
+
+------->>>>>>>>>>>>>>Replicate of real world
+
+Has- A
+		Types:
+			Number's
+			Direction's
+
+Time
+	Compile 
+	Runtime
+1. One to one---- > Today's Target
+	Company-->CEO     7
+	Mango-->Seed      1
+	Country-->PrimeMinister  n
+		1. Write Country Class
+			declare four prop's
+		2.Write PrimeMinister class
+			declare four prop's
+		3. Relate Country and PrimeMinister
+1. Create Obj of Country
+	Init all the prop's
+2. Create Obj of PrimeMinister
+	Init all props'
+3. Ref country with pm
+4. Ref pm with country
+
+	Person-->Pan       2 
+	Human-->Brain   0
+		
+2. One to many
+3. Many to one
+4. Many to Many
+
+Two Classes--> Disimilar Datatype
+Mobile-->Battery,Camera's
+Car-->Engine
+Library--> Books
+Person-->Address
+Institute-->ClassRoom's*
+College-->Student's*
+Shoe-->Size*
+Bank-->Accounts*
+Vittal-->GirlFriend's*
+Window-->Glass
+
+
+
+
+
+
+
+
+
+
+
+
+
