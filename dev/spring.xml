@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="bean" class="com.dev.devaapp.beans.SolarSystemBeans">
+<property name="name" value="Planar" ></property>
+<property name="noOfPlanets" value="8" ></property>
+<property name="size" value="123456788"  ></property>
+<property name="beans" ref="pb" ></property>
+</bean>
+<bean id="pb" class="com.dev.devaapp.beans.PlanetBeans">
+<property name="name" value="Earth" ></property>
+<property name="size" value="81111111111" ></property>
+
+</bean>
+
+</beans>
