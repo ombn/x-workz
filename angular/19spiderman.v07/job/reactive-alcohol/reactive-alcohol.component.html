@@ -1,0 +1,43 @@
+
+<div class="container">
+        <h1>Alcohol Reactive Forms</h1>
+        <div *ngIf="submitted" class="alert alert-success">Data submit success
+            {{alcoholFormGroup.debug}}
+        </div>
+<form [formGroup]="alcoholFormGroup" (ngSubmit)="onSubmit()">
+    <div *ngIf="!submitted">
+    <div class="form-group">
+     <label>Brand </label>  <input type="text" class="form-control" formControlName="brand"/>
+    </div>
+    <div class="form-group">
+        <label>type </label>  <input type="text" class="form-control" formControlName="type"/>
+    </div>
+    <div class="form-group">
+        <label>Quantity </label>  <input type="text" class="form-control" formControlName="quantity"/>
+    </div>
+    <div class="form-group">
+        <label>Price </label>  <input type="text" class="form-control" formControlName="price"/>
+       </div>
+       <div class="form-group">
+        <label>Years </label>  <input type="text" class="form-control" formControlName="years"/>
+       </div>
+       TODO REMOVE {{alcoholFormGroup.status}}
+   <div >
+<button type="submit" class="btn btn-primary" >Add</button>
+   </div>
+</div>
+   <div *ngIf="submitted">
+       <h3>Brand: {{display('brand')}} </h3>
+       <h3>Type :  {{display('type')}}</h3>
+       <h3>price: {{display('price')}}</h3>
+       <div><h3>Quantity: {{display('quantity')}} </h3>
+        <!--X-workz-->
+ <button class="btn btn-success" (click)="edit=true;" *ngIf="!edit">Edit</button>
+    <input type="text" *ngIf="edit" [formControl]="tempQuantity"/>
+    <button *ngIf="edit" (click)="onSave()" type="button" class="btn btn-success">Save</button>
+    </div>
+       <h3>Years: {{display('years')}}</h3>
+   </div>
+</form>
+
+</div>
