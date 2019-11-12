@@ -1,0 +1,31 @@
+class SocialNetwork{
+    private String name;
+	private boolean working;
+	private Internet internet;
+	public void load()
+	{
+	this.internet.connect();
+	}
+}
+class Internet{
+private String provider;
+private Details details;
+public void connect(){
+s.o.p('connected using provider');
+if(details!=null)
+{
+this.details.info()
+}
+}
+}
+class Details{
+      int speed;
+	  String type; 
+	  
+	  public void info(){
+	  s.o.p(speed + type );
+	  }
+}
+
+
+
