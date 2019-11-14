@@ -27,5 +27,11 @@ class Details{
 	  }
 }
 
+Nov 14th 
 
+util name space 
+
+1.Create and add elements to list and set  using spring 
+    
+2. Find all attributes of bean tag 	
 
