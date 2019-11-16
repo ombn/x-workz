@@ -1,0 +1,25 @@
+Bootstrap + Angular Routing 
+
+1. install npm bootstrap -save 
+    save modules in node_modules
+2. Import bootstrap in styles.css
+    @Import "bootstrap/dist/css/bootstrap.min.css"
+3. Add nav bar in app.component.html
+
+     <nav class="navbar navbar-expand-lg bg-dark navbar-light">
+	 <a class="navbar-brand">X-workz</a>
+	 <ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" routerLink="">Event</a></li>
+	 </ul>
+	 
+	 </nav>
+	 Below steps in app.module.ts
+4.Create and load Components in declarations
+5. import RouterModule,Routes from '@angular/router'
+6. Create const for Routes
+        const  appRoutes:Routes=[
+		{path:'event',component:EventComponent},
+		{path:'activity',component:ActivityComponent}
+		]
+7. import RouterModule.forRoot(appRoutes);
+8. use <router-outlet></router-outlet> in app.component.html
