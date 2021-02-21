@@ -1,0 +1,40 @@
+<div>
+    <h1>Job Component</h1>
+</div>
+
+<div>
+        <div>
+                <label>Qualification</label>
+                <select #qua>
+                    <option></option>
+                    <option *ngFor="let jo of jobs">{{jo}}</option>
+                </select>
+               <span style="color:red"> {{quaError}}</span>
+            </div>
+    <div>
+        <label>Company</label>
+        <input type="text" #company/>
+    </div>
+    <div>
+            <label>Expereince</label>
+            <input type="text" #exp/>
+        </div>
+        <div>
+                <label>Skills</label>
+                <input type="text" #skill/>
+            </div>
+
+            <div>
+                <button (click)="onPost(qua.value,company.value,exp.value,skill.value)">Post</button>
+                <button (click)="onClear(qua,exp,skill,company)">Clear</button>
+            </div>
+            <div *ngIf="posted">
+<h2>Job posted : </h2>
+<pre>
+Qualification: {{qua.value}}
+Company: {{company.value}}
+Expereince:{{exp.value}}
+Skill:{{skill.value}}
+</pre>
+</div>
+</div>
