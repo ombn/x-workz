@@ -23,7 +23,7 @@ public class RegistrationController {
 
 	private static final String FAILURE = "failure";
 
-	@PostMapping("/v1/save")
+	//@PostMapping("/v1/save")
 	public ResponseEntity<?> register(@RequestBody Object request) {
 		Response response = null;
 		try {
@@ -35,7 +35,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@GetMapping("/v1/fetchData")
+	//@GetMapping("/v1/fetchData")
 	public ResponseEntity<?> fetchUser(@RequestParam("id") int userId) {
 		Response response = null;
 		try {
@@ -47,7 +47,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@GetMapping("/v1/fetchAllData")
+	//@GetMapping("/v1/fetchAllData")
 	public ResponseEntity<?> fetchAllUser() {
 		Response response = null;
 		try {
@@ -59,7 +59,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@DeleteMapping("/v1/removeData")
+	//@DeleteMapping("/v1/removeData")
 	public ResponseEntity<?> remove(@RequestParam("id") int userId) {
 		Response response = null;
 		try {
@@ -71,7 +71,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-	@DeleteMapping("/v1/removeAll")
+	//@DeleteMapping("/v1/removeAll")
 	public ResponseEntity<?> removeAll() {
 		Response response = null;
 		try {
@@ -83,7 +83,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 	
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
 	@PostMapping("/v2/save")
 	public ResponseEntity<?> saveData(@RequestBody Object request) {
 		Response response = null;
@@ -96,7 +96,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
 	@GetMapping("/v2/fetchData/{category}")
 	public ResponseEntity<?> fetchData(@PathVariable("category") String category) {
 		Response response = null;
@@ -109,7 +109,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
 	@GetMapping("/v2/fetchAllData")
 	public ResponseEntity<?> fetchAllData() {
 		Response response = null;
@@ -122,7 +122,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
 	@DeleteMapping("/v2/removeData/{category}")
 	public ResponseEntity<?> removeData(@PathVariable("category") String category) {
 		Response response = null;
@@ -135,7 +135,7 @@ public class RegistrationController {
 		return new ResponseEntity<Response>(response, HttpStatus.OK);
 	}
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
 	@DeleteMapping("/v2/removeAll")
 	public ResponseEntity<?> removeAllData() {
 		Response response = null;

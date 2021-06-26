@@ -17,8 +17,10 @@ public class SwaggerConfig {
 		System.out.println("*********************");
         return new Docket(DocumentationType.SWAGGER_2)  
           .select()                                  
-          .apis(RequestHandlerSelectors.any())              
+          .apis(RequestHandlerSelectors.basePackage("com.xworkz"))             
           .paths(PathSelectors.any())                          
           .build();                                           
     }
 }
+
+
